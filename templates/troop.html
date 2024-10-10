@@ -1,0 +1,30 @@
+<!-- templates/troops.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clash Royale - Troops</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h1>Troop List</h1>
+    <a href="{{ url_for('index') }}">Back to Home</a>
+    <table>
+        <thead>
+            <tr>
+                <th>Troop ID</th>
+                <th>Team</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for troop in troops %}
+            <tr>
+                <td>{{ troop.id }}</td>
+                <td>{{ troop.team.card1 }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

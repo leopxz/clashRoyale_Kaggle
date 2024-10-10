@@ -1,0 +1,34 @@
+<!-- templates/battles.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clash Royale - Battles</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h1>Battle Records</h1>
+    <a href="{{ url_for('index') }}">Back to Home</a>
+    <table>
+        <thead>
+            <tr>
+                <th>Battle ID</th>
+                <th>Time</th>
+                <th>Winner</th>
+                <th>Loser</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for battle in battles %}
+            <tr>
+                <td>{{ battle.id }}</td>
+                <td>{{ battle.battleTime }}</td>
+                <td>{{ battle.winner.tag }}</td>
+                <td>{{ battle.loser.tag }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

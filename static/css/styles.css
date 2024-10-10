@@ -1,0 +1,92 @@
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8; /* Um tom claro, mas vibrante */
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #f9c74f; /* Amarelo dourado */
+    text-align: center;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    color: #43aa8b; /* Verde intenso */
+    margin: 20px 0;
+    border-bottom: 2px solid #f9c74f; /* Linha abaixo do título */
+    padding-bottom: 5px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 15px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff; /* Azul do jogo */
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s;
+}
+
+a:hover {
+    color: #0056b3; /* Azul escuro */
+    transform: scale(1.05); /* Aumenta levemente o tamanho do link */
+}
+
+form {
+    background-color: #fff;
+    border-radius: 10px; /* Cantos arredondados mais acentuados */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra mais forte */
+    padding: 30px; /* Mais espaço interno */
+    margin: 20px 0;
+    border: 2px solid #43aa8b; /* Borda verde */
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #333; /* Cor do texto das labels */
+}
+
+input[type="text"],
+input[type="number"],
+input[type="datetime-local"],
+button {
+    width: 70%;
+    padding: 12px; /* Aumentar o padding */
+    margin-bottom: 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="datetime-local"]:focus {
+    border-color: #43aa8b; /* Borda verde ao focar */
+    outline: none; /* Remove o contorno padrão */
+}
+
+button {
+    background-color: #1c1257; /* Amarelo dourado */
+    color: #faf7f7; /* Texto escuro */
+    border: none;
+    cursor: pointer;
+    padding: 12px; /* Para manter a consistência */
+    transition: background-color 0.3s, transform 0.3s; /* Animações de fundo e transformação */
+}
+
+button:hover {
+    background-color: #e6b800; /* Amarelo mais escuro */
+    transform: scale(1.05); /* Aumenta levemente o botão */
+}
