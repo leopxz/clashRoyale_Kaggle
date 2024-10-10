@@ -16,11 +16,11 @@ MongoEngine: ODM (Object-Document Mapper) usado para modelar os documentos do Mo
 ## Instalação
 Clone o repositório:
 ```
-git clone https://github.com/seu-usuario/seu-repositorio.git
+git clone https://github.com/leopxz/clashRoyale_Kaggle
 ```
 Navegue até o diretório do projeto:
 ```
-cd seu-repositorio
+cd clashRoyale_Kaggle
 ```
 Instale as dependências:
 ```
@@ -28,38 +28,7 @@ pip install -r requirements.txt
 ```
 Configure o arquivo .env com suas credenciais do MongoDB Atlas e outras variáveis de ambiente.
 
-## 
-Memória atualizada
-Aqui está o esboço de um README para o seu projeto:
-
-Clash Royale Battle Analysis API
-Descrição
-Esta aplicação é uma API construída com Flask e MongoDB Atlas que analisa dados de batalhas e cartas do jogo Clash Royale. A API permite executar consultas sobre as batalhas, como a porcentagem de vitórias/derrotas de uma carta em um determinado período, decks com maior percentual de vitórias e o número de derrotas em batalhas usando uma combinação específica de cartas.
-
-Funcionalidades
-Obter porcentagem de vitórias/derrotas para uma carta: Calcula a taxa de vitórias ou derrotas para uma carta específica em um intervalo de tempo.
-Consultar decks com alto percentual de vitórias: Retorna os decks que têm uma porcentagem de vitórias acima de um determinado valor.
-Número de derrotas com combinação de cartas: Informa o número de derrotas em batalhas que envolveram uma combinação específica de cartas em um intervalo de tempo.
-Tecnologias Utilizadas
-Flask: Framework web para Python usado para construir a API.
-MongoDB Atlas: Banco de dados NoSQL para armazenar os dados de batalhas e jogadores.
-MongoEngine: ODM (Object-Document Mapper) usado para modelar os documentos do MongoDB em objetos Python.
-Instalação
-Clone o repositório:
-bash
-Copiar código
-git clone https://github.com/seu-usuario/seu-repositorio.git
-Navegue até o diretório do projeto:
-bash
-Copiar código
-cd seu-repositorio
-Instale as dependências:
-```
-pip install -r requirements.txt
-```
-Configure o arquivo .env com suas credenciais do MongoDB Atlas e outras variáveis de ambiente.
-
-Execução
+## Execução
 Inicie o servidor Flask:
 ```
 python app.py
