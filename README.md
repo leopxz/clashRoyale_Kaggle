@@ -26,7 +26,7 @@ Instale as dependências:
 ```
 pip install -r requirements.txt
 ```
-Configure o arquivo .env com suas credenciais do MongoDB Atlas e outras variáveis de ambiente.
+Configure o arquivo .env com suas credenciais do MongoDB Compass e outras variáveis de ambiente.
 
 ## Execução
 Inicie o servidor Flask:
